@@ -27,7 +27,7 @@
 ## TODOs
 - [X] GIT einrichten
   - roomMonitor
-  - [ ] gitignore
+  - [X] gitignore
 - [ ] Raspberry Pi 4
   - [ ] Virtual Environment einrichten
   - [ ] Datenbank SQLite3 zum speichern der Messwerte
@@ -46,14 +46,18 @@
   - [ ] C++ Programm zum auslesen der Messwerte und senden über MQTT
     - [ ] MQTT Client zum schicken der Werte
     - [ ] JSON oder nur String
+    - PAHO MQTT Client
   - [ ] Sleep Funktion zum Stromsparen mit Timer Interrupt
     - [ ] Timer Interrupt zum messen
     - [ ] Sleep Funktion zum Stromsparen
     - [ ] Sleep und Timer Interrupt kombinieren
+    - sleep mode mit Real Time Clock
+    - https://www.heise.de/blog/Sleepy-Pico-ein-Raspberry-Pi-Pico-geht-mit-C-C-schlafen-6046517.html
   - [ ] DHT22 auslesen
-    - [ ] 10k Ohm Widerstand benötigt??
+    - [X] 10k Ohm Widerstand benötigt?? -> Nein
+    - https://github.com/eleanor-em/pico-dht22/blob/main/src/dht22-pico.h
 - [ ] Hardware besorgen
-  - [ ] 10k Ohm Widerstand ??
+  - [X] 10k Ohm Widerstand ?? -> Nicht benötigt
   - [ ] 5V Netzteil 
 
 ## Notizen
