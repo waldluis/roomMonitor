@@ -33,6 +33,7 @@ MANIFEST
 .venv
 env/
 venv/
+requirements.txt
 
 # Stuff
 .vscode/
