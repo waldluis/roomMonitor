@@ -43,7 +43,10 @@
   - [ ] Framework informieren
   - [ ] Website erstellen 
 - [ ] Raspberry Pi Pico W
-  - [ ] C++ Programm zum auslesen der Messwerte und senden über MQTT
+  - [X] MicroPython
+    - Einfacher als C++
+    - Libraries vorhanden 
+  - [ ] MicroPython Programm zum auslesen der Messwerte und senden über MQTT
     - [ ] MQTT Client zum schicken der Werte
     - [ ] JSON oder nur String
     - PAHO MQTT Client
@@ -55,7 +58,7 @@
     - https://www.heise.de/blog/Sleepy-Pico-ein-Raspberry-Pi-Pico-geht-mit-C-C-schlafen-6046517.html
   - [ ] DHT22 auslesen
     - [X] 10k Ohm Widerstand benötigt?? -> Nein
-    - https://github.com/eleanor-em/pico-dht22/blob/main/src/dht22-pico.h
+    - test/DHT22.py
 - [ ] Hardware besorgen
   - [X] 10k Ohm Widerstand ?? -> Nicht benötigt
   - [ ] 5V Netzteil 

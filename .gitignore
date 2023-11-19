@@ -38,3 +38,4 @@ venv/
 .vscode/
 *.pdf
 *.exe
+.micropico
