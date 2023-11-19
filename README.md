@@ -28,21 +28,29 @@
 - [X] GIT einrichten
   - roomMonitor
   - [X] gitignore
-- [ ] Raspberry Pi 4
-  - [ ] Virtual Environment einrichten
+  - 
+### Raspberry Pi 4
+
+  - [X] Virtual Environment einrichten
   - [ ] Datenbank SQLite3 zum speichern der Messwerte
     - [ ] Informieren
     - [ ] Implementieren
     - [ ] Bilal Projekt
     - [ ] Timestamps
-  - [ ] MQTT Broker Mosquitto zum senden der Messwerte
-    - [ ] Bilal Projekt 
+  - [X] MQTT Broker Mosquitto zum senden der Messwerte
+    - Installiert, autostart
   - [ ] Backend zum speichern der Messwerte in der Datenbank und empfangen der Messwerte über MQTT
     - [ ] Client wie in Projekt
-- [ ] Website zum anzeigen der Messwerte
+      - Publisher und Subscriber Beispiel
+    - [ ] Beispiele optimieren
+  
+### Website zum anzeigen der Messwerte
+
   - [ ] Framework informieren
   - [ ] Website erstellen 
-- [ ] Raspberry Pi Pico W
+  
+### Raspberry Pi Pico W
+
   - [X] Autorun einrichten
     - Alle files mit Thonny Save Copy in Pico
     - Hauptprogramm main.py 
@@ -51,6 +59,7 @@
     - Libraries vorhanden 
   - [ ] MicroPython Programm zum auslesen der Messwerte und senden über MQTT
     - [ ] MQTT Client zum schicken der Werte
+      - Beispiel in mqttPub.py
     - [ ] JSON oder nur String
     - PAHO MQTT Client
   - [ ] Sleep Funktion zum Stromsparen mit Timer Interrupt
@@ -61,7 +70,9 @@
   - [X] DHT22 auslesen
     - [X] 10k Ohm Widerstand benötigt?? -> Nein
     - test/DHT22.py
-- [ ] Hardware besorgen
+  
+### Hardware besorgen
+
   - [X] 10k Ohm Widerstand ?? -> Nicht benötigt
   - [ ] 5V Netzteil 
 
