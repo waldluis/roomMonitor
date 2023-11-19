@@ -43,6 +43,9 @@
   - [ ] Framework informieren
   - [ ] Website erstellen 
 - [ ] Raspberry Pi Pico W
+  - [X] Autorun einrichten
+    - Alle files mit Thonny Save Copy in Pico
+    - Hauptprogramm main.py 
   - [X] MicroPython
     - Einfacher als C++
     - Libraries vorhanden 
@@ -55,8 +58,7 @@
     - [ ] Sleep Funktion zum Stromsparen
     - [ ] Sleep und Timer Interrupt kombinieren
     - sleep mode mit Real Time Clock
-    - https://www.heise.de/blog/Sleepy-Pico-ein-Raspberry-Pi-Pico-geht-mit-C-C-schlafen-6046517.html
-  - [ ] DHT22 auslesen
+  - [X] DHT22 auslesen
     - [X] 10k Ohm Widerstand benötigt?? -> Nein
     - test/DHT22.py
 - [ ] Hardware besorgen
