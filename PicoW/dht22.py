@@ -31,3 +31,12 @@ class DHT22Sensor:
         self.__dht22.measure()
         self.__dht22Data["temperature"] = self.__dht22.temperature()
         self.__dht22Data["humidity"] = self.__dht22.humidity()
+
+    def getData(self):
+        """Get the measured temperature and humidity.
+
+        Returns:
+            __dht22Data (dict): A dictionary containing the measured temperature and humidity.
+
+        """
+        return self.__dht22Data

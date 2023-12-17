@@ -40,8 +40,9 @@
   - [X] MQTT Broker Mosquitto zum senden der Messwerte
     - Installiert, autostart
   - [ ] Backend zum speichern der Messwerte in der Datenbank und empfangen der Messwerte über MQTT
-    - [ ] Client wie in Projekt
+    - [ ] Subscriber wie in Projekt
       - Publisher und Subscriber Beispiel
+      - Empfängt Messwerte in JSON Format, Topic: roomMonitor/PicoWDHT22
     - [ ] Beispiele optimieren
   
 ### Website zum anzeigen der Messwerte
@@ -57,11 +58,12 @@
   - [X] MicroPython
     - Einfacher als C++
     - Libraries vorhanden 
-  - [ ] MicroPython Programm zum auslesen der Messwerte und senden über MQTT
-    - [ ] MQTT Client zum schicken der Werte
+  - [X] MicroPython Programm zum auslesen der Messwerte und senden über MQTT
+    - [X] MQTT Client zum schicken der Werte
       - Beispiel in mqttPub.py
-    - [ ] JSON oder nur String
+    - [X] JSON
     - PAHO MQTT Client
+    - https://core-electronics.com.au/guides/getting-started-with-mqtt-on-raspberry-pi-pico-w-connect-to-the-internet-of-things/
   - [ ] Sleep Funktion zum Stromsparen mit Timer Interrupt
     - [ ] Timer Interrupt zum messen
     - [ ] Sleep Funktion zum Stromsparen
