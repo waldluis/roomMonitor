@@ -32,8 +32,8 @@
 ### Raspberry Pi 4
 
   - [X] Virtual Environment einrichten
-  - [ ] Datenbank SQLite3 zum speichern der Messwerte
-    - [ ] Informieren
+  - [ ] Datenbank zum speichern der Messwerte
+    - [ ] Informieren SQLite oder MySQL
     - [ ] Implementieren
     - [ ] Bilal Projekt
     - [ ] Timestamps
@@ -48,7 +48,11 @@
 ### Website zum anzeigen der Messwerte
 
   - [ ] Framework informieren
-  - [ ] Website erstellen 
+    - [ ] Apache2 Webserver
+  - [ ] Website erstellen
+    - [ ] PHP oder was anderes 
+  - https://www.heise.de/tipps-tricks/Raspberry-Pi-als-Webserver-einrichten-so-klappt-s-4988855.html
+  - https://www.raspberry-pi-geek.de/ausgaben/rpg/2013/05/raspberry-pi-als-webserver/2/
   
 ### Raspberry Pi Pico W
 
