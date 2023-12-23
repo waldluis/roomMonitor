@@ -34,6 +34,9 @@
   - [X] Virtual Environment einrichten
   - [ ] Datenbank zum speichern der Messwerte
     - [ ] Informieren SQLite oder MySQL
+    - [ ] InfluxDB & Grphana -> kein weiterer Webserver
+      -  https://www.reichelt.com/magazin/en/projects/sensor-database-on-the-raspberry-pi/
+      -  https://pimylifeup.com/raspberry-pi-influxdb/
     - [ ] Implementieren
     - [ ] Bilal Projekt
     - [ ] Timestamps
