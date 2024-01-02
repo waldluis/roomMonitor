@@ -33,13 +33,16 @@
 
   - [X] Virtual Environment einrichten
   - [ ] Datenbank zum speichern der Messwerte
-    - [ ] Informieren SQLite oder MySQL
-    - [ ] InfluxDB & Grphana -> kein weiterer Webserver
+    - [X] InfluxDB mit Web Interface -> kein weiterer Webserver
       -  https://www.reichelt.com/magazin/en/projects/sensor-database-on-the-raspberry-pi/
       -  https://pimylifeup.com/raspberry-pi-influxdb/
+      -  User: waldluis
+      -  Passwort: 
     - [ ] Implementieren
-    - [ ] Bilal Projekt
-    - [ ] Timestamps
+      - Test in dp2.py
+      - Schreiben in MQTT Callback
+      - Token checken
+    - [ ] Timestamps -> automatisch
   - [X] MQTT Broker Mosquitto zum senden der Messwerte
     - Installiert, autostart
   - [ ] Backend zum speichern der Messwerte in der Datenbank und empfangen der Messwerte über MQTT
@@ -51,11 +54,9 @@
 ### Website zum anzeigen der Messwerte
 
   - [ ] Framework informieren
-    - [ ] Apache2 Webserver
-  - [ ] Website erstellen
-    - [ ] PHP oder was anderes 
-  - https://www.heise.de/tipps-tricks/Raspberry-Pi-als-Webserver-einrichten-so-klappt-s-4988855.html
-  - https://www.raspberry-pi-geek.de/ausgaben/rpg/2013/05/raspberry-pi-als-webserver/2/
+    - InfluxDB Web Interface
+    - Eingerichtet
+    - Token für Zugriff checken
   
 ### Raspberry Pi Pico W
 
