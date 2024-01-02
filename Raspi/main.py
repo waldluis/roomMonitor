@@ -2,7 +2,7 @@ from paho.mqtt import client as mqtt_client
 import datetime
 
 # region Global variables
-broker = '192.168.188.200'
+broker = '192.168.178.200'
 port = 1883
 topic = "roomMonitor/PicoWDHT22"
 client_id = 'RaspiDataMonitor'
