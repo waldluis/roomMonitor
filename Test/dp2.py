@@ -2,7 +2,7 @@ import influxdb_client, os, time
 from influxdb_client import InfluxDBClient, Point, WritePrecision
 from influxdb_client.client.write_api import SYNCHRONOUS
 
-token = ""
+token = "mROuey9zCmYy7ZB9NKepYoLY981nL84vVEHeVXSlP4kmzfc4ZcU3dz5NAI6N4ds0_69Hs6VrKKOuGjVBS-Ec8Q=="
 org = "admin"
 url = "http://192.168.178.200:8086"
 
