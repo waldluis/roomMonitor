@@ -34,19 +34,16 @@
   - [X] Virtual Environment einrichten
   - [ ] Datenbank zum speichern der Messwerte
     - [X] InfluxDB mit Web Interface -> kein weiterer Webserver
-      -  https://www.reichelt.com/magazin/en/projects/sensor-database-on-the-raspberry-pi/
-      -  https://pimylifeup.com/raspberry-pi-influxdb/
       -  User: waldluis
       -  Passwort: 
-    - [ ] Implementieren
+    - [X] Implementieren
       - Test in dp2.py
       - Schreiben in MQTT Callback
-      - Token checken
-    - [ ] Timestamps -> automatisch
+    - [X] Timestamps -> automatisch
   - [X] MQTT Broker Mosquitto zum senden der Messwerte
     - Installiert, autostart
-  - [ ] Backend zum speichern der Messwerte in der Datenbank und empfangen der Messwerte über MQTT
-    - [ ] Subscriber wie in Projekt
+  - [X] Backend zum speichern der Messwerte in der Datenbank und empfangen der Messwerte über MQTT
+    - [X] Subscriber wie in Projekt
       - Publisher und Subscriber Beispiel
       - Empfängt Messwerte in JSON Format, Topic: roomMonitor/PicoWDHT22
     - [ ] Beispiele optimieren
@@ -56,7 +53,9 @@
   - [ ] Framework informieren
     - InfluxDB Web Interface
     - Eingerichtet
-    - Token für Zugriff checken
+    - Token für Zugriff checken - Token generieren
+    - [ ] User nur zum Dashboard anzeigen
+    - [ ] Dashboard erstellen
   
 ### Raspberry Pi Pico W
 
@@ -76,6 +75,7 @@
     - [ ] Timer Interrupt zum messen
     - [ ] Sleep Funktion zum Stromsparen
     - [ ] Sleep und Timer Interrupt kombinieren
+    - [ ] Messintervall einstellen (15 Min?)
     - sleep mode mit Real Time Clock
   - [X] DHT22 auslesen
     - [X] 10k Ohm Widerstand benötigt?? -> Nein
