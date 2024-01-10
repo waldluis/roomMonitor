@@ -47,6 +47,10 @@
       - Publisher und Subscriber Beispiel
       - Empfängt Messwerte in JSON Format, Topic: roomMonitor/PicoWDHT22
     - [ ] Beispiele optimieren
+  - [ ] main.py Autostart
+    - rc.local wird bisher nicht ausgeführt
+    - Autostart mit systemd?
+    - https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/#systemd
   
 ### Website zum anzeigen der Messwerte
 
