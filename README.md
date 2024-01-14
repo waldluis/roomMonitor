@@ -47,19 +47,18 @@
       - Publisher und Subscriber Beispiel
       - Empfängt Messwerte in JSON Format, Topic: roomMonitor/PicoWDHT22
     - [ ] Beispiele optimieren
-  - [ ] main.py Autostart
-    - rc.local wird bisher nicht ausgeführt
-    - Autostart mit systemd?
-    - https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/#systemd
+  - [X] main.py Autostart
+    - rc.local mit 20s delay
+    - Delay dass Netzwerk und InfluxDB gestartet sind
   
 ### Website zum anzeigen der Messwerte
 
-  - [ ] Framework informieren
+  - [X] Framework informieren
     - InfluxDB Web Interface
     - Eingerichtet
     - Token für Zugriff checken - Token generieren
     - [ ] User nur zum Dashboard anzeigen
-    - [ ] Dashboard erstellen
+    - [X] Dashboard erstellen
   
 ### Raspberry Pi Pico W
 

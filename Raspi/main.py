@@ -5,7 +5,7 @@ import influxdb_client
 from influxdb_client.client.write_api import SYNCHRONOUS
 
 # region Global variables
-broker = '192.168.178.200'
+broker = '192.168.188.200'
 port = 1883
 topic = "roomMonitor/PicoWDHT22"
 client_id = 'RaspiDataMonitor'
@@ -57,7 +57,7 @@ def on_message(client, userdata, msg):
     # Write to InfluxDB
     token = "fzrKNIgdcLi4Ed65EnPoSmL-CWH1KG9YqBOhlCEAqmg0NU9ibVtb-2g5MUnREoi8huL0Y2f8-3Shgi45wN5Yhg=="
     org = "admin"
-    url = "http://192.168.178.200:8086"
+    url = "http://192.168.188.200:8086"
     bucket = "roomMonitor"
 
     clientDatabase = influxdb_client.InfluxDBClient(url=url, token=token, org=org)
