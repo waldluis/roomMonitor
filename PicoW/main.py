@@ -65,10 +65,10 @@ def main():
 
     # Daheim
     wifi_ssid = "FRITZ!BOX 7490_W"
-    wifi_password ="77567930705388833248"
+    wifi_password =""
 
     # wifi_ssid = "MartinRouterKing"
-    # wifi_password = "i_have_a_stream"
+    # wifi_password = ""
     connectWIFI(wifi_ssid, wifi_password)
 
     broker = "192.168.188.200"
