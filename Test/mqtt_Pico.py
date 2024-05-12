@@ -17,7 +17,7 @@ def connectWIFI():
     None
     """
     wifi_ssid = "MartinRouterKing"
-    wifi_password = "i_have_a_stream"
+    wifi_password = ""
 
     wlan = network.WLAN(network.STA_IF)
     wlan.active(True)
