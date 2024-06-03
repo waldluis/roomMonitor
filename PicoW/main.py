@@ -23,7 +23,7 @@ def connectWIFI(wifi_ssid, wifi_password, wlan) -> bool:
     counter = 0 
     wlan.active(True)
     wlan.connect(wifi_ssid, wifi_password)
-    while wlan.isconnected() == False and counter < 10:
+    while wlan.isconnected() == False and counter < 20:
         print('Waiting for connection...')
         time.sleep(1)
         counter += 1
@@ -87,42 +87,55 @@ def main():
     """
     sensor = DHT22Sensor()
     wlan = network.WLAN(network.STA_IF)
+    
+    
+    # wifi_ssid = "FRITZ!Box 7490_W"
+    # wifi_password ="77567930705388833248"
 
-    # Daheim
-    wifi_ssid = "FRITZ!BOX 7490_W"
-    wifi_password =""
-
-    # wifi_ssid = "MartinRouterKing"
-    # wifi_password = ""
+    wifi_ssid = "MartinRouterKing"
+    wifi_password = "i_have_a_stream"
+    
+    connectWIFI(wifi_ssid, wifi_password, wlan)
 
     broker = "192.168.188.200"
     port = 1883
     client_id = "PicoW_DHT22"
     topic = "roomMonitor/PicoWDHT22"
+    client = connectMQTT(broker, port, client_id)
 
     while True:
-
         # connect to wifi
-        if connectWIFI(wifi_ssid, wifi_password, wlan):    
-
-            # connect to mqtt broker
-            client = connectMQTT(broker, port, client_id)
-
-            # read sensor data
-            sensor.measure()
-
-            # publish sensor data
-            msg = json.dumps(sensor.getData())
-            client.publish(topic, msg)
-
-            # disconnect from mqtt broker
-            client.disconnect()
-
-            # disconnect from wifi
-            disconnectWIFI(wlan)
-
-        # sleep for 15 minutes
-        machine.lightsleep(900_000)
+        
+        sensor.measure()
+        
+        msg = json.dumps(sensor.getData())
+        client.publish(topic, msg)
+        
+        time.sleep(900)
+        
+#         if connectWIFI(wifi_ssid, wifi_password, wlan):    
+# 
+#             # connect to mqtt broker
+#             client = connectMQTT(broker, port, client_id)
+#             print(client)
+#             time.sleep(5)
+# 
+#             # read sensor data
+#             sensor.measure()
+# 
+#             # publish sensor data
+#             msg = json.dumps(sensor.getData())
+#             client.publish(topic, msg)
+# 
+#             # disconnect from mqtt broker
+#             client.disconnect()
+# 
+#             # disconnect from wifi
+#             disconnectWIFI(wlan)
+# 
+#         # sleep for 15 minutes
+#         # machine.lightsleep(900_000)
+#         time.sleep(60)
 
 
 if __name__ == "__main__":
